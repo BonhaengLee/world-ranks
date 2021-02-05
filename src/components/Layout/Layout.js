@@ -1,6 +1,6 @@
 import { Brightness6Rounded } from "@material-ui/icons";
 import Head from "next/head";
-import Link from "next/Link";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./Layout.module.css";
 
@@ -34,7 +34,7 @@ const Layout = ({ children, title = "world Ranks" }) => {
         <div className={styles.container}>
             <Head>
                 <title>{title}</title>
-                <link rel="icon" href="/favicon.ico" />
+                <Link rel="icon" href="/favicon.ico" />
             </Head>
 
             <header className={styles.header}>
